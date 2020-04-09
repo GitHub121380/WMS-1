@@ -20,6 +20,8 @@
     wms_user 用户表
     wms_user_role 用户角色映射表
     
+登录：login
+主界面：mainPage
     
 ## 部分截图
 
