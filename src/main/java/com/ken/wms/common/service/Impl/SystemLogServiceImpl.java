@@ -131,6 +131,7 @@ public class SystemLogServiceImpl implements SystemLogService {
         try {
             if (isPagination) {
                 PageHelper.offsetPage(offset, limit);
+                //时间倒序输出
                 accessRecordDOS = accessRecordMapper.selectAccessRecords(userID, accessType, startDate, newEndDate);
                 if (accessRecordDOS != null) {
                     accessRecordDOS.forEach(accessRecordDO -> accessRecordDTOS.add(convertAccessRecordDOToAccessRecordDTO(accessRecordDO)));

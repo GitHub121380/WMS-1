@@ -2,7 +2,8 @@
 	pageEncoding="UTF-8"%>
 
 <script>
-	var search_type_customer = "none";
+	//默认查询所有
+	var search_type_customer = "searchAll";
 	var search_keyWord = "";
 	var selectID;
 

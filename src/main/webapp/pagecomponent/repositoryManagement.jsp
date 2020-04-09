@@ -2,7 +2,8 @@
 	pageEncoding="UTF-8"%>
 
 <script>
-	var search_type_repository = "none";
+	//默认查询所有
+	var search_type_repository = "searchAll";
 	var search_keyWord = "";
 	var selectID;
 

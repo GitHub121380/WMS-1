@@ -28,6 +28,7 @@
             ACCESS_IP
         from
             wms_access_record
+        order by ACCESS_TIME desc
         <where>
             <if test="userID != -1">
                 USER_ID = #{userID}
@@ -42,5 +43,6 @@
                 <![CDATA[and ACCESS_TIME <= #{endDate}]]>
             </if>
         </where>
+
     </select>
 </mapper>

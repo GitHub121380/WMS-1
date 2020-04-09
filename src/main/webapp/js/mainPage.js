@@ -33,17 +33,19 @@ function menuClickAction() {
 
 // 注销登陆
 function signOut() {
-	$("#signOut").click(function() {
+	$("#signOut").click(function () {
 		$.ajax({
-			type : "GET",
-			url : "account/logout",
-			dataType : "json",
-			contentType : "application/json",
-			success:function(response){
+			type: "GET",
+			url: "account/logout",
+			dataType: "json",
+			contentType: "application/json",
+			success: function (response) {
+				window.location.href = "/login"
 				//刷新
-				window.location.reload(true);
-			},error:function(response){
-				
+				// window.location.reload();
+			},
+			error: function (response) {
+
 			}
 		})
 	})

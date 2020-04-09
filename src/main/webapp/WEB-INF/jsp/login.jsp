@@ -88,7 +88,6 @@
 		src="${pageContext.request.contextPath}/js/bootstrapValidator.min.js"></script>
 	<script type="text/javascript"
 		src="${pageContext.request.contextPath}/js/jquery.md5.js"></script>
-
 	<script>
 		$(function() {
 			validatorInit();
@@ -172,19 +171,19 @@
 				}
 				//JSON.stringify(data)序列化
 				$.ajax({
-					type:"POST",
-					url:"account/login",
-					dataType:"json",
-					contentType:"application/json",
-					data:JSON.stringify(data),
-					success:function(response){
+					type: "POST",
+					url: "account/login",
+					dataType: "json",
+					contentType: "application/json",
+					data: JSON.stringify(data),
+					success: function (response) {
 						// 接收到后端响应
-						
+
 						// 分析返回的 JSON 数据
-						if(response.result == 'error'){
+						if (response.result == 'error') {
 							var errorMessage;
 							var field;
-							if(response.msg == "unknownAccount"){
+							if (response.msg == "unknownAccount") {
 								errorMessage = "用户名错误";
 								field = "userID";
 							}
@@ -207,7 +206,7 @@
 							$('#checkCode').val("");
 						}else{
 							// 页面跳转
-							window.location.href = "/mainPage";
+							window.location.href = "${pageContext.request.contextPath}/mainPage";
 						}
 					},
 					error:function(data){
@@ -217,5 +216,7 @@
 			});
 		}
 	</script>
+	<script type="text/javascript"
+			src="${pageContext.request.contextPath}/js/canvas-nest.min.js"></script>
 </body>
 </html>

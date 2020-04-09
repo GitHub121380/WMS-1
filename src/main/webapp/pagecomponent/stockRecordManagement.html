@@ -3,8 +3,8 @@
 
 <script>
     // 出入库记录查询参数
-    search_type = 'none'
-    search_repositoryID = ''
+    search_type = 'all';//出入库类型 出库or入库or所有
+    search_repositoryID = '';//仓库编号
     search_start_date = null
     search_end_date = null
 
@@ -122,17 +122,17 @@
 //											<!--}-->
 //										<!--}-->
 //									<!--}-->
-									 ],
-							url : 'stockRecordManage/searchStockRecord',
-							method : 'GET',
-							queryParams : queryParams,
-							sidePagination : "server",
-							dataType : 'json',
-							pagination : true,
-							pageNumber : 1,
-							pageSize : 5,
-							pageList : [ 5, 10, 25, 50, 100 ],
-							clickToSelect : true
+                            ],
+                            url: 'stockRecordManage/searchStockRecord',
+                            method: 'GET',
+                            queryParams: queryParams,
+                            sidePagination: "server",
+                            dataType: 'json',
+                            pagination: true,
+                            pageNumber: 1,
+                            pageSize: 5,
+                            pageList: [5, 10, 25, 50, 100],
+                            clickToSelect: true
 						});
 	}
 
