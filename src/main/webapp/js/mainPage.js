@@ -40,7 +40,10 @@ function signOut() {
 			dataType: "json",
 			contentType: "application/json",
 			success: function (response) {
-				window.location.href = "/login"
+				var pathName = window.document.location.pathname;
+				var projectName = pathName.substring(0, pathName.substr(1).indexOf('/') + 1);
+				window.document.location.href = projectName + "/login";
+
 				//刷新
 				// window.location.reload();
 			},

@@ -301,7 +301,7 @@ function stockoutOperation(){
 					inputReset();
 				}else{
 					type = 'error';
-					msg = '货物出库失败'
+					msg = '该仓库货物不足'
 				}
 				infoModal(type, msg);
 			},
