@@ -24,10 +24,12 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>war</packaging>
 
-    <name>WMS</name>
-    <groupId>com.ken</groupId>
-    <artifactId>WMS</artifactId>
+
+    <name>WMS-Le</name>
+    <groupId>com.huaji</groupId>
+    <artifactId>WMS-Le</artifactId>
     <version>1.0-SNAPSHOT</version>
+
 
     <dependencies>
         <!-- Servlet dependency -->

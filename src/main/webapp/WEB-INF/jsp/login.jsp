@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>登陆</title>
+<title>登录</title>
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css"
@@ -67,7 +67,7 @@
 								<div class="col-md-4 col-sm-4"></div>
 								<div class="col-md-4 col-sm-4">
 									<button id="submit" type="submit" class="btn btn-primary">
-										&nbsp;&nbsp;&nbsp;&nbsp;登陆&nbsp;&nbsp;&nbsp;&nbsp;</button>
+										&nbsp;&nbsp;&nbsp;&nbsp;登录&nbsp;&nbsp;&nbsp;&nbsp;</button>
 								</div>
 								<div class="col-md-4 col-sm-4"></div>
 							</div>

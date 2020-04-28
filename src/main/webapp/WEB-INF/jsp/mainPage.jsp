@@ -6,7 +6,7 @@
 <head>
     <!--//{pageContext.request.contextPath}作用是取出部署应用程序的名字-->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>仓库管理系统</title>
+    <title>乐仓仓库管理系统</title>
     <link rel="stylesheet" type="text/css"
           href="${pageContext.request.contextPath}/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css"
