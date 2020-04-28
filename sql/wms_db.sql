@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 80013
 File Encoding         : 65001
 
-Date: 2020-04-09 21:16:05
+Date: 2020-04-28 09:49:19
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -27,7 +27,7 @@ CREATE TABLE `wms_access_record` (
   `ACCESS_TIME` datetime NOT NULL,
   `ACCESS_IP` varchar(45) NOT NULL,
   PRIMARY KEY (`RECORD_ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=65 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=93 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of wms_access_record
@@ -96,6 +96,34 @@ INSERT INTO `wms_access_record` VALUES ('61', '1001', 'admin', 'login', '2020-04
 INSERT INTO `wms_access_record` VALUES ('62', '1001', 'admin', 'logout', '2020-04-09 12:40:52', '-');
 INSERT INTO `wms_access_record` VALUES ('63', '1001', 'admin', 'login', '2020-04-09 12:41:13', '127.0.0.1');
 INSERT INTO `wms_access_record` VALUES ('64', '1001', 'admin', 'logout', '2020-04-09 12:46:50', '-');
+INSERT INTO `wms_access_record` VALUES ('65', '1001', 'admin', 'login', '2020-04-27 03:00:10', '127.0.0.1');
+INSERT INTO `wms_access_record` VALUES ('66', '1001', 'admin', 'login', '2020-04-27 08:44:31', '127.0.0.1');
+INSERT INTO `wms_access_record` VALUES ('67', '1001', 'admin', 'logout', '2020-04-27 09:40:54', '-');
+INSERT INTO `wms_access_record` VALUES ('68', '1001', 'admin', 'login', '2020-04-27 09:47:48', '127.0.0.1');
+INSERT INTO `wms_access_record` VALUES ('69', '1001', 'admin', 'logout', '2020-04-27 09:47:57', '-');
+INSERT INTO `wms_access_record` VALUES ('70', '1001', 'admin', 'login', '2020-04-27 09:51:17', '127.0.0.1');
+INSERT INTO `wms_access_record` VALUES ('71', '1001', 'admin', 'logout', '2020-04-27 09:51:24', '-');
+INSERT INTO `wms_access_record` VALUES ('72', '1001', 'admin', 'login', '2020-04-27 09:54:11', '127.0.0.1');
+INSERT INTO `wms_access_record` VALUES ('73', '1001', 'admin', 'logout', '2020-04-27 09:54:17', '-');
+INSERT INTO `wms_access_record` VALUES ('74', '1001', 'admin', 'login', '2020-04-27 09:54:53', '127.0.0.1');
+INSERT INTO `wms_access_record` VALUES ('75', '1001', 'admin', 'logout', '2020-04-27 09:54:57', '-');
+INSERT INTO `wms_access_record` VALUES ('76', '1001', 'admin', 'login', '2020-04-27 09:57:51', '127.0.0.1');
+INSERT INTO `wms_access_record` VALUES ('77', '1001', 'admin', 'logout', '2020-04-27 09:58:24', '-');
+INSERT INTO `wms_access_record` VALUES ('78', '1001', 'admin', 'login', '2020-04-27 09:58:43', '127.0.0.1');
+INSERT INTO `wms_access_record` VALUES ('79', '1001', 'admin', 'login', '2020-04-27 10:00:28', '127.0.0.1');
+INSERT INTO `wms_access_record` VALUES ('80', '1001', 'admin', 'logout', '2020-04-27 10:00:47', '-');
+INSERT INTO `wms_access_record` VALUES ('81', '1001', 'admin', 'login', '2020-04-27 10:01:15', '127.0.0.1');
+INSERT INTO `wms_access_record` VALUES ('82', '1001', 'admin', 'login', '2020-04-27 10:03:42', '127.0.0.1');
+INSERT INTO `wms_access_record` VALUES ('83', '1001', 'admin', 'logout', '2020-04-27 10:04:12', '-');
+INSERT INTO `wms_access_record` VALUES ('84', '1001', 'admin', 'login', '2020-04-27 10:11:25', '127.0.0.1');
+INSERT INTO `wms_access_record` VALUES ('85', '1001', 'admin', 'logout', '2020-04-27 10:11:30', '-');
+INSERT INTO `wms_access_record` VALUES ('86', '1001', 'admin', 'login', '2020-04-27 10:14:17', '127.0.0.1');
+INSERT INTO `wms_access_record` VALUES ('87', '1001', 'admin', 'login', '2020-04-27 10:17:08', '127.0.0.1');
+INSERT INTO `wms_access_record` VALUES ('88', '1001', 'admin', 'logout', '2020-04-27 10:17:30', '-');
+INSERT INTO `wms_access_record` VALUES ('89', '1001', 'admin', 'login', '2020-04-27 10:18:50', '127.0.0.1');
+INSERT INTO `wms_access_record` VALUES ('90', '1001', 'admin', 'logout', '2020-04-27 10:18:54', '-');
+INSERT INTO `wms_access_record` VALUES ('91', '1001', 'admin', 'login', '2020-04-27 11:10:35', '127.0.0.1');
+INSERT INTO `wms_access_record` VALUES ('92', '1001', 'admin', 'logout', '2020-04-27 11:10:41', '-');
 
 -- ----------------------------
 -- Table structure for `wms_action`
@@ -172,15 +200,16 @@ CREATE TABLE `wms_customer` (
   `CUSTOMER_TEL` varchar(20) NOT NULL,
   `CUSTOMER_EMAIL` varchar(20) NOT NULL,
   `CUSTOMER_ADDRESS` varchar(30) NOT NULL,
-  PRIMARY KEY (`CUSTOMER_ID`)
+  PRIMARY KEY (`CUSTOMER_ID`),
+  KEY `CUSTOMER_ID` (`CUSTOMER_ID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1217 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of wms_customer
 -- ----------------------------
-INSERT INTO `wms_customer` VALUES ('1214', '醴陵荣旗瓷业有限公司', '陈娟', '17716786888', '23369888@136.com', '中国 湖南 醴陵市 嘉树乡玉茶村柏树组');
-INSERT INTO `wms_customer` VALUES ('1215', '深圳市松林达电子有限公司', '刘明', '85263335-820', '85264958@126.com', '中国 广东 深圳市宝安区 深圳市宝安区福永社区桥头村桥塘路育');
-INSERT INTO `wms_customer` VALUES ('1216', '郑州绿之源饮品有限公司 ', '赵志敬', '87094196', '87092165@qq.com', '中国 河南 郑州市 郑州市嘉亿东方大厦609');
+INSERT INTO `wms_customer` VALUES ('1201', '郑州市郑州大学新校区', '刘炯天', '17716786888', '23369888@136.com', '中国 河南 郑州市 高新区 科学大道100号');
+INSERT INTO `wms_customer` VALUES ('1202', '郑州市郑州大学老校区', '申长雨', '85263335-820', '85264958@126.com', '中国 河南 郑州市 金水区 文化路97号');
+INSERT INTO `wms_customer` VALUES ('1203', '郑州绿之源饮品有限公司 ', '赵佳玉', '87094196', '87092165@qq.com', '中国 河南 郑州市 郑州市嘉亿东方大厦609');
 
 -- ----------------------------
 -- Table structure for `wms_goods`
@@ -192,15 +221,18 @@ CREATE TABLE `wms_goods` (
   `GOOD_RYPE` varchar(20) DEFAULT NULL,
   `GOOD_SIZE` varchar(20) DEFAULT NULL,
   `GOOD_VALUE` double NOT NULL,
-  PRIMARY KEY (`GOOD_ID`)
+  PRIMARY KEY (`GOOD_ID`),
+  KEY `GOOD_ID` (`GOOD_ID`),
+  KEY `GOOD_ID_2` (`GOOD_ID`),
+  KEY `GOOD_ID_3` (`GOOD_ID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=106 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of wms_goods
 -- ----------------------------
-INSERT INTO `wms_goods` VALUES ('103', '五孔插座西门子墙壁开关', '电器', '86*86', '1.85');
-INSERT INTO `wms_goods` VALUES ('104', '陶瓷马克杯', '陶瓷', '9*9*11', '3.5');
-INSERT INTO `wms_goods` VALUES ('105', '精酿苹果醋', '饮料', '312ml', '300');
+INSERT INTO `wms_goods` VALUES ('101', '七孔智能排插', '电器', '56*186', '30');
+INSERT INTO `wms_goods` VALUES ('102', '陶瓷马克杯', '日用品', '9*9*11', '3.5');
+INSERT INTO `wms_goods` VALUES ('103', '乳酪夹心面包', '食品', '50g', '1.5');
 
 -- ----------------------------
 -- Table structure for `wms_operation_record`
@@ -214,13 +246,19 @@ CREATE TABLE `wms_operation_record` (
   `OPERATION_TIME` datetime NOT NULL,
   `OPERATION_RESULT` varchar(15) NOT NULL,
   PRIMARY KEY (`RECORD_ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of wms_operation_record
 -- ----------------------------
 INSERT INTO `wms_operation_record` VALUES ('1', '1001', 'admin', '货物入库', '2020-04-08 03:28:21', '成功');
 INSERT INTO `wms_operation_record` VALUES ('2', '1001', 'admin', '货物入库', '2020-04-08 03:36:38', '成功');
+INSERT INTO `wms_operation_record` VALUES ('3', '1001', 'admin', '货物出库', '2020-04-27 09:33:42', '失败');
+INSERT INTO `wms_operation_record` VALUES ('4', '1001', 'admin', '货物出库', '2020-04-27 09:33:46', '失败');
+INSERT INTO `wms_operation_record` VALUES ('5', '1001', 'admin', '货物出库', '2020-04-27 09:33:51', '失败');
+INSERT INTO `wms_operation_record` VALUES ('6', '1001', 'admin', '货物出库', '2020-04-27 09:34:25', '失败');
+INSERT INTO `wms_operation_record` VALUES ('7', '1001', 'admin', '货物出库', '2020-04-27 09:35:38', '失败');
+INSERT INTO `wms_operation_record` VALUES ('8', '1001', 'admin', '货物出库', '2020-04-27 09:36:26', '失败');
 
 -- ----------------------------
 -- Table structure for `wms_record_in`
@@ -235,21 +273,21 @@ CREATE TABLE `wms_record_in` (
   `RECORD_PERSON` varchar(10) NOT NULL,
   `RECORD_REPOSITORYID` int(11) NOT NULL,
   PRIMARY KEY (`RECORD_ID`),
-  KEY `RECORD_SUPPLIERID` (`RECORD_SUPPLIERID`),
-  KEY `RECORD_GOODID` (`RECORD_GOODID`),
-  KEY `RECORD_REPOSITORYID` (`RECORD_REPOSITORYID`),
-  CONSTRAINT `wms_record_in_ibfk_1` FOREIGN KEY (`RECORD_SUPPLIERID`) REFERENCES `wms_supplier` (`supplier_id`),
-  CONSTRAINT `wms_record_in_ibfk_2` FOREIGN KEY (`RECORD_GOODID`) REFERENCES `wms_goods` (`good_id`),
-  CONSTRAINT `wms_record_in_ibfk_3` FOREIGN KEY (`RECORD_REPOSITORYID`) REFERENCES `wms_respository` (`repo_id`)
+  KEY `wms_record_in_ibfk_1` (`RECORD_SUPPLIERID`),
+  KEY `wms_record_in_ibfk_2` (`RECORD_GOODID`),
+  KEY `wms_record_in_ibfk_3` (`RECORD_REPOSITORYID`),
+  CONSTRAINT `wms_record_in_ibfk_1` FOREIGN KEY (`RECORD_SUPPLIERID`) REFERENCES `wms_supplier` (`supplier_id`) ON DELETE RESTRICT ON UPDATE CASCADE,
+  CONSTRAINT `wms_record_in_ibfk_2` FOREIGN KEY (`RECORD_GOODID`) REFERENCES `wms_goods` (`good_id`) ON DELETE RESTRICT ON UPDATE CASCADE,
+  CONSTRAINT `wms_record_in_ibfk_3` FOREIGN KEY (`RECORD_REPOSITORYID`) REFERENCES `wms_respository` (`repo_id`) ON DELETE RESTRICT ON UPDATE CASCADE
 ) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of wms_record_in
 -- ----------------------------
-INSERT INTO `wms_record_in` VALUES ('15', '1015', '105', '1000', '2016-12-31 00:00:00', 'admin', '1004');
-INSERT INTO `wms_record_in` VALUES ('16', '1015', '105', '200', '2017-01-02 00:00:00', 'admin', '1004');
-INSERT INTO `wms_record_in` VALUES ('17', '1015', '105', '200', '2020-04-08 03:28:21', 'admin', '1004');
-INSERT INTO `wms_record_in` VALUES ('18', '1015', '105', '200', '2020-04-08 03:36:38', 'admin', '1004');
+INSERT INTO `wms_record_in` VALUES ('15', '1003', '103', '1000', '2016-12-31 00:00:00', 'admin', '2002');
+INSERT INTO `wms_record_in` VALUES ('16', '1003', '103', '200', '2017-01-02 00:00:00', 'admin', '2002');
+INSERT INTO `wms_record_in` VALUES ('17', '1003', '103', '200', '2020-04-08 03:28:21', 'admin', '2002');
+INSERT INTO `wms_record_in` VALUES ('18', '1003', '103', '200', '2020-04-08 03:36:38', 'admin', '2002');
 
 -- ----------------------------
 -- Table structure for `wms_record_out`
@@ -264,18 +302,18 @@ CREATE TABLE `wms_record_out` (
   `RECORD_PERSON` varchar(10) NOT NULL,
   `RECORD_REPOSITORYID` int(11) NOT NULL,
   PRIMARY KEY (`RECORD_ID`),
-  KEY `RECORD_CUSTOMERID` (`RECORD_CUSTOMERID`),
-  KEY `RECORD_GOODID` (`RECORD_GOODID`),
-  KEY `RECORD_REPOSITORYID` (`RECORD_REPOSITORYID`),
-  CONSTRAINT `wms_record_out_ibfk_1` FOREIGN KEY (`RECORD_CUSTOMERID`) REFERENCES `wms_customer` (`customer_id`),
-  CONSTRAINT `wms_record_out_ibfk_2` FOREIGN KEY (`RECORD_GOODID`) REFERENCES `wms_goods` (`good_id`),
-  CONSTRAINT `wms_record_out_ibfk_3` FOREIGN KEY (`RECORD_REPOSITORYID`) REFERENCES `wms_respository` (`repo_id`)
+  KEY `wms_record_out_ibfk_1` (`RECORD_CUSTOMERID`),
+  KEY `wms_record_out_ibfk_2` (`RECORD_GOODID`),
+  KEY `wms_record_out_ibfk_3` (`RECORD_REPOSITORYID`),
+  CONSTRAINT `wms_record_out_ibfk_1` FOREIGN KEY (`RECORD_CUSTOMERID`) REFERENCES `wms_customer` (`customer_id`) ON DELETE RESTRICT ON UPDATE CASCADE,
+  CONSTRAINT `wms_record_out_ibfk_2` FOREIGN KEY (`RECORD_GOODID`) REFERENCES `wms_goods` (`good_id`) ON DELETE RESTRICT ON UPDATE CASCADE,
+  CONSTRAINT `wms_record_out_ibfk_3` FOREIGN KEY (`RECORD_REPOSITORYID`) REFERENCES `wms_respository` (`repo_id`) ON DELETE RESTRICT ON UPDATE CASCADE
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of wms_record_out
 -- ----------------------------
-INSERT INTO `wms_record_out` VALUES ('7', '1214', '104', '750', '2016-12-31 00:00:00', 'admin', '1003');
+INSERT INTO `wms_record_out` VALUES ('7', '1201', '102', '750', '2016-12-31 00:00:00', 'admin', '2001');
 
 -- ----------------------------
 -- Table structure for `wms_record_storage`
@@ -286,17 +324,17 @@ CREATE TABLE `wms_record_storage` (
   `RECORD_REPOSITORY` int(11) NOT NULL,
   `RECORD_NUMBER` int(11) NOT NULL,
   PRIMARY KEY (`RECORD_GOODID`),
-  KEY `RECORD_REPOSITORY` (`RECORD_REPOSITORY`),
-  CONSTRAINT `wms_record_storage_ibfk_1` FOREIGN KEY (`RECORD_GOODID`) REFERENCES `wms_goods` (`good_id`),
-  CONSTRAINT `wms_record_storage_ibfk_2` FOREIGN KEY (`RECORD_REPOSITORY`) REFERENCES `wms_respository` (`repo_id`)
+  KEY `wms_record_storage_ibfk_2` (`RECORD_REPOSITORY`),
+  CONSTRAINT `wms_record_storage_ibfk_1` FOREIGN KEY (`RECORD_GOODID`) REFERENCES `wms_goods` (`good_id`) ON DELETE RESTRICT ON UPDATE CASCADE,
+  CONSTRAINT `wms_record_storage_ibfk_2` FOREIGN KEY (`RECORD_REPOSITORY`) REFERENCES `wms_respository` (`repo_id`) ON DELETE RESTRICT ON UPDATE CASCADE
 ) ENGINE=InnoDB AUTO_INCREMENT=106 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of wms_record_storage
 -- ----------------------------
-INSERT INTO `wms_record_storage` VALUES ('103', '1005', '10000');
-INSERT INTO `wms_record_storage` VALUES ('104', '1003', '1750');
-INSERT INTO `wms_record_storage` VALUES ('105', '1004', '2400');
+INSERT INTO `wms_record_storage` VALUES ('101', '2003', '10000');
+INSERT INTO `wms_record_storage` VALUES ('102', '2001', '1750');
+INSERT INTO `wms_record_storage` VALUES ('103', '2002', '2400');
 
 -- ----------------------------
 -- Table structure for `wms_repo_admin`
@@ -311,15 +349,15 @@ CREATE TABLE `wms_repo_admin` (
   `REPO_ADMIN_BIRTH` datetime NOT NULL,
   `REPO_ADMIN_REPOID` int(11) DEFAULT NULL,
   PRIMARY KEY (`REPO_ADMIN_ID`),
-  KEY `REPO_ADMIN_REPOID` (`REPO_ADMIN_REPOID`),
-  CONSTRAINT `wms_repo_admin_ibfk_1` FOREIGN KEY (`REPO_ADMIN_REPOID`) REFERENCES `wms_respository` (`repo_id`)
+  KEY `wms_repo_admin_ibfk_1` (`REPO_ADMIN_REPOID`),
+  CONSTRAINT `wms_repo_admin_ibfk_1` FOREIGN KEY (`REPO_ADMIN_REPOID`) REFERENCES `wms_respository` (`repo_id`) ON DELETE RESTRICT ON UPDATE CASCADE
 ) ENGINE=InnoDB AUTO_INCREMENT=1020 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of wms_repo_admin
 -- ----------------------------
-INSERT INTO `wms_repo_admin` VALUES ('1018', '王皓', '女', '12345874526', '中国佛山', '2016-12-09 00:00:00', '1004');
-INSERT INTO `wms_repo_admin` VALUES ('1019', '李富荣', '男', '1234', '广州', '2016-12-07 00:00:00', '1003');
+INSERT INTO `wms_repo_admin` VALUES ('201', '张佳乐', '男', '12345874526', '河南省洛阳市', '2016-12-09 00:00:00', '2002');
+INSERT INTO `wms_repo_admin` VALUES ('202', '徐金鹏', '男', '1234', '河南省郑州市', '2016-12-07 00:00:00', '2001');
 
 -- ----------------------------
 -- Table structure for `wms_respository`
@@ -331,15 +369,19 @@ CREATE TABLE `wms_respository` (
   `REPO_STATUS` varchar(20) NOT NULL,
   `REPO_AREA` varchar(20) NOT NULL,
   `REPO_DESC` varchar(50) DEFAULT NULL,
-  PRIMARY KEY (`REPO_ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=1006 DEFAULT CHARSET=utf8;
+  PRIMARY KEY (`REPO_ID`),
+  KEY `REPO_ID` (`REPO_ID`),
+  KEY `REPO_ID_2` (`REPO_ID`),
+  KEY `REPO_ID_3` (`REPO_ID`),
+  KEY `REPO_ID_4` (`REPO_ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=2004 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of wms_respository
 -- ----------------------------
-INSERT INTO `wms_respository` VALUES ('1003', '北京顺义南彩工业园区彩祥西路9号', '可用', '11000㎡', '提供服务完整');
-INSERT INTO `wms_respository` VALUES ('1004', '广州白云石井石潭路大基围工业区', '可用', '1000㎡', '物流极为便利');
-INSERT INTO `wms_respository` VALUES ('1005', ' 香港北区文锦渡路（红桥新村）', '可用', '5000.00㎡', null);
+INSERT INTO `wms_respository` VALUES ('2001', '洛阳市涧西区景华路38号', '可用', '11000㎡', '提供服务完整');
+INSERT INTO `wms_respository` VALUES ('2002', '郑州市金水区文化路郑州大学北校区仓库', '不可用', '1000㎡', '物流极为便利');
+INSERT INTO `wms_respository` VALUES ('2003', ' 武汉蔡甸区高标库', '可用', '5000.00㎡', '设备众多');
 
 -- ----------------------------
 -- Table structure for `wms_roles`
@@ -437,15 +479,17 @@ CREATE TABLE `wms_supplier` (
   `SUPPLIER_TEL` varchar(20) NOT NULL,
   `SUPPLIER_EMAIL` varchar(20) NOT NULL,
   `SUPPLIER_ADDRESS` varchar(30) NOT NULL,
-  PRIMARY KEY (`SUPPLIER_ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=1016 DEFAULT CHARSET=utf8;
+  PRIMARY KEY (`SUPPLIER_ID`),
+  KEY `SUPPLIER_ID` (`SUPPLIER_ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=1017 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of wms_supplier
 -- ----------------------------
-INSERT INTO `wms_supplier` VALUES ('1013', '浙江奇同电器有限公司', '王泽伟', '13777771126', '86827868@126.com', '中国 浙江 温州市龙湾区 龙湾区永强大道1648号');
-INSERT INTO `wms_supplier` VALUES ('1014', '醴陵春天陶瓷实业有限公司', '温仙容', '13974167256', '23267999@126.com', '中国 湖南 醴陵市 东正街15号');
-INSERT INTO `wms_supplier` VALUES ('1015', '洛阳嘉吉利饮品有限公司', '郑绮云', '26391678', '22390898@qq.com', '中国 广东 佛山市顺德区 北滘镇怡和路2号怡和中心14楼');
+INSERT INTO `wms_supplier` VALUES ('1001', '福建天典电器有限公司', '朱天辰', '13777771126', '86827868@126.com', '中国 浙江 温州市龙湾区 龙湾区永强大道1648号');
+INSERT INTO `wms_supplier` VALUES ('1002', '景德镇明天陶瓷实业有限公司', '宋东明', '13974167256', '23267999@126.com', '中国 湖南 醴陵市 东正街15号');
+INSERT INTO `wms_supplier` VALUES ('1003', '洛阳伟大食品有限公司', '祁同伟', '26391678', '22390898@qq.com', '中国 广东 佛山市顺德区 北滘镇怡和路2号怡和中心14楼');
+INSERT INTO `wms_supplier` VALUES ('1004', '洛阳轴承厂股权有限公司', '张千杰', '13023323333', 'test@qq.com', '中国 河南 洛阳市 天津路');
 
 -- ----------------------------
 -- Table structure for `wms_user`
@@ -462,8 +506,8 @@ CREATE TABLE `wms_user` (
 -- Records of wms_user
 -- ----------------------------
 INSERT INTO `wms_user` VALUES ('1001', 'admin', '6f5379e73c1a9eac6163ab8eaec7e41c');
-INSERT INTO `wms_user` VALUES ('1018', '王皓', '50f202f4862360e55635b0a9616ded13');
-INSERT INTO `wms_user` VALUES ('1019', '李富荣', 'c4b3af5a5ab3e3d5aac4c5a5436201b8');
+INSERT INTO `wms_user` VALUES ('1018', '张佳乐', '50f202f4862360e55635b0a9616ded13');
+INSERT INTO `wms_user` VALUES ('1019', '徐金鹏', 'c4b3af5a5ab3e3d5aac4c5a5436201b8');
 
 -- ----------------------------
 -- Table structure for `wms_user_role`

@@ -87,7 +87,7 @@
                         },
                         {
                             field: 'value',
-                            title: '货物价值',
+                            title: '货物价值（元）',
                         },
                         {
                             field: 'operation',
