@@ -4,7 +4,7 @@ package com.huaji.wms.domain;
  * 用户操作记录DTO
  *
  * @author 滑技工厂
- * @since 2017/4/9.
+ * @since 2020/4/9.
  */
 public class UserOperationRecordDTO {
 

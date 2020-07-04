@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
  * 全局异常处理器
  *
  * @author 滑技工厂
- * @since 2017/3/8.
+ * @since 2020/3/8.
  */
 @ControllerAdvice
 public class GlobalExceptionHandler {

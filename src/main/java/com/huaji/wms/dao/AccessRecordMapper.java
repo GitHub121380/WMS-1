@@ -11,7 +11,7 @@ import java.util.List;
  * 用户登入登出记录因映射器
  *
  * @author 滑技工厂
- * @since 2017/3/5.
+ * @since 2020/3/5.
  */
 @Repository
 public interface AccessRecordMapper {

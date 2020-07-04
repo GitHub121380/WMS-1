@@ -4,7 +4,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * Response Utils
- * Created by Ken on 2017/1/18.
+ * Created by Ken on 2020/1/18.
  */
 @Component
 public class ResponseUtil {

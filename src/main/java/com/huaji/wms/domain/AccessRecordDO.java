@@ -6,7 +6,7 @@ import java.util.Date;
  * 用户登入登出记录
  *
  * @author 滑技工厂
- * @since 2017/3/5.
+ * @since 2020/3/5.
  */
 public class AccessRecordDO {
 

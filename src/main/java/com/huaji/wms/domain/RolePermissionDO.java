@@ -4,7 +4,7 @@ package com.huaji.wms.domain;
  * URL 的角色角色权限信息
  *
  * @author 滑技工厂
- * @since 2017/2/26
+ * @since 2020/2/26
  */
 public class RolePermissionDO {
 

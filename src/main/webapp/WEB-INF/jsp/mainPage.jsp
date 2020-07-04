@@ -134,11 +134,11 @@
                                 <ul class="list-group">
                                     <li class="list-group-item">
                                         <a href="javascript:void(0)" id="" class="menu_item"
-                                           name="#">货物入库</a>
+                                           name="pagecomponent/stock-inManagement.jsp">货物入库</a>
                                     </li>
                                     <li class="list-group-item">
                                         <a href="javascript:void(0)" id="" class="menu_item"
-                                           name="#">货物出库</a>
+                                           name="pagecomponent/stock-outManagement.jsp">货物出库</a>
                                     </li>
                                 </ul>
                             </shiro:hasRole>
@@ -225,7 +225,7 @@
                                     </li>
                                     <li class="list-group-item">
                                         <a href="javascript:void(0)" id=""
-                                           class="menu_item" name="pagecomponent/accessRecordManagement.html">登陆日志</a>
+                                           class="menu_item" name="pagecomponent/accessRecordManagement.html">登录日志</a>
                                     </li>
                                 </shiro:hasRole>
                             </ul>

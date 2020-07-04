@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * 用户账户信息（数据传输对象）
  * @author 滑技工厂
- * @since 2017/2/26.
+ * @since 2020/2/26.
  */
 public class UserInfoDTO {
 

@@ -9,7 +9,7 @@ import java.util.List;
  * 角色权限信息 Mapper
  *
  * @author 滑技工厂
- * @since  2017/2/26.
+ * @since  2020/2/26.
  */
 @Repository
 public interface RolePermissionMapper {

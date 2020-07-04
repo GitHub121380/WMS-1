@@ -4,7 +4,7 @@ package com.huaji.wms.exception;
  * 业务层异常的父类
  *
  * @author 滑技工厂
- * @since 2017/3/8.
+ * @since 2020/3/8.
  */
 public class BusinessException extends Exception{
 

@@ -18,7 +18,7 @@ import javax.servlet.http.HttpSessionListener;
  * 当用户session注销时，记录用户账户登出的时间
  *
  * @author Ken
- * @since 2017/3/4.
+ * @since 2020/3/4.
  */
 @Component
 public class AccountSessionListener implements HttpSessionListener, ApplicationContextAware{

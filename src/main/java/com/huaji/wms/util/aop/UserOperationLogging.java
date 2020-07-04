@@ -12,7 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  * 用户操作日志记录
  *
  * @author 滑技工厂
- * @since 2017/4/8.
+ * @since 2020/4/8.
  */
 public class UserOperationLogging {
 

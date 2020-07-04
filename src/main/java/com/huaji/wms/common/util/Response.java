@@ -8,7 +8,7 @@ import java.util.Map;
  * controller 返回的信息载体 response
  * @author 滑技工厂
  *
- * Created by Ken on 2017/1/18.
+ * Created by Ken on 2020/1/18.
  */
 public class Response {
 

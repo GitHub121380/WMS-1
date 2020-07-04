@@ -4,7 +4,7 @@ package com.huaji.wms.domain;
  * 出库/入库记录DO
  *
  * @author 滑技工厂
- * @since 2017/4/5.
+ * @since 2020/4/5.
  */
 public class StockRecordDTO {
 

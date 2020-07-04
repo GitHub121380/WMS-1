@@ -4,7 +4,7 @@ package com.huaji.wms.domain;
  * 登入登出记录DTO
  *
  * @author 滑技工厂
- * @since 2017/4/8.
+ * @since 2020/4/8.
  */
 public class AccessRecordDTO {
 

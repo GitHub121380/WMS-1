@@ -6,7 +6,7 @@ import java.util.Date;
  * 用户操作记录DO
  *
  * @author 滑技工厂
- * @since 2017/4/9.
+ * @since 2020/4/9.
  */
 public class UserOperationRecordDO {
 

@@ -850,7 +850,7 @@
 			<div class="modal-header">
 				<button class="close" type="button" data-dismiss="modal"
 					aria-hidden="true">&times;</button>
-				<h4 class="modal-title" id="myModalLabel">导出客户信息</h4>
+				<h4 class="modal-title" id="myModalLabel">导出仓库管理员信息</h4>
 			</div>
 			<div class="modal-body">
 				<div class="row">
@@ -936,7 +936,7 @@
 					</div>
 					<div class="col-md-8 col-sm-8">
 						<h3>是否确认删除该条仓库管理员信息</h3>
-						<p>(注意：若该仓库管理员已经指派管理的仓库，则该仓库管理员信息将不能删除成功。如需删除该客户的信息，请先解除该仓库管理员的指派)</p>
+						<p>（注意：若该仓库管理员已经指派管理的仓库，则该仓库管理员信息将不能删除成功。如需删除该仓库管理员的信息，请先解除该仓库管理员的指派）</p>
 					</div>
 				</div>
 			</div>

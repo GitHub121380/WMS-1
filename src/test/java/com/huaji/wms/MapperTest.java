@@ -23,7 +23,7 @@
 //import java.util.Map;
 //
 ///**
-// * Created by Ken on 2017/4/5.
+// * Created by Ken on 2020/4/5.
 // */
 //@ContextConfiguration(locations = "classpath:config/SpringApplicationConfiguration.xml")
 //@RunWith(SpringJUnit4ClassRunner.class)
@@ -93,8 +93,8 @@
 //
 //    @Test
 //    public void selectByRepositoryIDAndDateTest() throws ParseException {
-//        String startDateString = "2017-04-03";
-//        String endDateString = "2017-04-06";
+//        String startDateString = "2020-04-03";
+//        String endDateString = "2020-04-06";
 //        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 //        Date startDate = dateFormat.parse(startDateString);
 //        Date endDate = dateFormat.parse(endDateString);
